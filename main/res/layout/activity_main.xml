@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:dividerHeight="4dp"
+        android:divider="#00000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#909090"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f5f5f5">
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_baseline_send_24"
+            android:rotation="180"/>
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="3dp"
+            android:layout_margin="6dp"
+            android:inputType="textMultiLine"
+            android:hint="type message... " />
+
+
+    </LinearLayout>
+
+</LinearLayout>
